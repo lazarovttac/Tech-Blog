@@ -1,0 +1,344 @@
+
+/* 
+COLORS:
+
+Green: #61f2f5;
+ */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "poppins";
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #1F1F1F;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+
+}
+
+
+.home-main{
+    width: 100%;
+    height: 65vh;
+
+}
+
+.blogs-main{
+    width: 100%;
+    min-height: 65vh;
+
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+
+}
+
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+
+/* MODIFIERS */
+
+.flex{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page-padding{
+    padding: 0 50px;
+}
+
+
+
+/* HEADER */
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+.header__logo img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+.header__profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+/* FOOTER */
+
+.footer-nav-bar{
+
+    background-color: #48CFAD;
+
+    height: 40px;
+    width: 350px;
+    border-radius: 50px;
+}
+
+.footer-nav-bar__icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}   
+
+.footer-nav-bar__icons a{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.footer-nav-bar__icons span{
+    display: block;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* HOME STYLE */
+
+.background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 100vh;
+
+    background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(52,163,135,1) 100%);
+    z-index: -900;
+}
+
+
+.welcome{
+
+    width: 70%;
+    height: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    justify-items: center;
+
+    /* border: 1px solid black; */
+}
+
+.welcome__text{
+    font-size: 5rem;
+    color: white;
+
+    text-align: left;
+
+}
+.welcome__button{
+
+    margin-top: 50px;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+
+    text-align: center;
+    background-color: #61f2f5;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+tech{
+    font-size: 7rem;
+    text-shadow: 3px 2px #61f2f5;
+}
+
+
+/* BLOGS STYLE */
+
+.latest-news{
+    background-color: #111;
+    height: 500px;
+
+    color: white;
+
+}   
+
+.news{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    justify-items: center;
+
+}
+
+.news__image img{
+    
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+.news__texts{
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 50px;
+}
+
+.news__title{
+    font-size: 4rem;
+    
+}
+
+.news__description{
+    font-size: 2rem;
+}
+
+.recent-blog-posts{
+    display: grid;
+
+    align-items: center;
+    justify-items: center;
+
+    padding-top: 50px;
+
+    background-color: #111;
+}
+
+.section-title{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-left: -75px;
+
+    width: 400px;
+    border-radius: 100px;
+
+    text-align: center;
+
+    background-color: #48CFAD;
+}
+
+.recent-blog-posts__posts-wrapper{
+
+    min-height: 100vh;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+}
+
+.post-card{
+    width: 350px;
+    height: 500px;
+
+    border-radius: 10px;
+    color: white;
+
+    display: grid;
+    grid-template-rows: 5fr 5fr;
+    align-items: center;
+    justify-items: center;
+
+    margin: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.post-card__image{
+    width: 100%;
+    height: 100%;
+}
+.post-card__image img{
+    width: 100%;
+
+}
+
+.post-card__texts{
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.post-card__title{
+    font-size: 2.5rem;
+}
+.post-card__description{
+    font-size: 1.5rem;
+}
+
+.post-card__buttons{
+
+    width: 250px;
+    height: 45px;
+
+    background-color: #48CFAD;
+    border-radius: 50px;
+
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1F1F1F;
+
+
+}
+
+.post-card__buttons a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    padding-right: 45px;
+}   
